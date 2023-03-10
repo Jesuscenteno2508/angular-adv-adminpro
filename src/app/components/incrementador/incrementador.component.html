@@ -1,0 +1,28 @@
+<div class="input-group">
+    <span class="input-group-btn">
+        <button     (click)="CambiarValor(-5)"  
+                    [ngClass]="btnclass"
+                    type="button">
+                    <!-- class="btn btn-primary" <== sustituye   btnclass -->
+                        <i CLASS="fa fa-minus"></i>
+        </button>
+    </span>
+    <input  type="number" 
+            class="form-control" 
+            placeholder="Progreso"
+            [ngClass]="{'is-invalid': progreso>100 || progreso<0 }"
+            min="0"
+            max="100"
+            (ngModelChange)="onChange($event)" 
+             [(ngModel)]="progreso" 
+            
+        >
+         <!-- [value]=" 'Funcion=' + getPorcentaje + ' ==> ' " -->
+    <span class="input-group-btn">
+        <button (click)="CambiarValor(+5)"  
+                [ngClass]="btnclass" 
+                type="button">
+                    <i  CLASS="fa fa-plus"></i>
+        </button>
+    </span>
+</div>

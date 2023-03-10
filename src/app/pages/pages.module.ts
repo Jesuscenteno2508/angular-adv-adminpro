@@ -7,7 +7,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 //import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
+//import { NgChartsModule } from 'ng2-charts';
+//import { NgChartsModule } from 'ng2-charts';
+//import { NgChartsModule } from 'C:\Users\jesus.centeno\node_modules\ng2-charts\lib\ng-charts.module.d.ts'
+//C:\Users\jesus.centeno\node_modules\ng2-charts\lib\ng-charts.module.d.ts
 
 @NgModule({
   declarations: [   
@@ -23,9 +28,13 @@ import { RouterModule } from '@angular/router';
     DashboardComponent,
   ],
   imports: [
+    FormsModule,
     CommonModule,
     SharedModule,
-    RouterModule   //se encarga de    <router-outlet></router-outlet>
+    RouterModule,   //se encarga de    <router-outlet></router-outlet>
+    ComponentsModule,
+   // NgChartsModule
+    //NgChartsModule,
     //AppRoutingModule
   ]
 })

@@ -1,1 +1,68 @@
-<p>progress works!</p>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">                          
+                    <h4 class="card-title"> Striped Progress bar </h4>
+                    <div class="progress m-t-20">
+                        <!-- style= "width: 50%; height:20px;"   -->
+                        <div class="progress-bar bg-primary progress-bar-striped active"                                 
+                                    style= " height:20px;"                                 
+                                    [style.width]="getPorcentaje1" 
+                                    role="progressbar">
+                                  
+                            
+                        </div> 
+                    </div> 
+                    <div class="progress m-t-20">
+                        <!-- style= "width: 50%; height:20px;"   -->
+                        <div class="progress-bar bg-info progress-bar-striped active"                                 
+                                    style= " height:20px;"                                 
+                                    [style.width]="getPorcentaje2" 
+                                    role="progressbar">
+                                    
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>> 
+
+
+    <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">  
+                            <!-- <h2>porc= {{ progreso }} , Incre= {{ valor }}  </h2> -->
+                            <div class="col-lg-12">
+                                <!-- valorSalida(EventEmitter) Viene del hijo app-incrementador y es un evento -->
+                                <!-- Para recivir el valor emitiendo ($event) va ser del tipo de dato que emita  valorSalida -->                                
+                                <!-- <app-incrementador (valorSalida)="cambioValorHijo($event)" [valor1]="15"> -->
+                                <!-- cambio el output a valor2; puede ser valor1 automaticamente reconoce si es input o Output -->
+                                <!-- <app-incrementador (valorSalida)="progreso1 = $event"  [valor1]="progreso1">          -->
+                                <app-incrementador (valor2)="progreso1 = $event"  
+                                                    [valor1]="progreso1">    
+                                </app-incrementador>
+                            </div>
+                                                
+                    </div>>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">  
+                                <app-incrementador (valor2)="progreso2 = $event"  
+                                                   [valor1]="progreso2"
+                                                   btnclass="btn-info">  
+                                                   <!-- estaba en llaves cuadraras y es el valor 
+                                                   de una propiedad y no se puede utilizar en JS por "-" 
+                                                   para solventar quitar las llaves y lo manda comno string -->
+                                                         
+                                </app-incrementador>
+                    </div>
+                </div>
+            </div>
+    </div> 
+
+
+

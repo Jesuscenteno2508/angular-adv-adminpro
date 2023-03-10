@@ -9,14 +9,16 @@ import { AppComponent } from './app.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { AppRoutingModule } from './app-routing.module';
 
+//import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+
 @NgModule({
   declarations: [
     AppComponent, 
-    NopagefoundComponent,   
-   // LoginComponent,
-   // RegisterComponent,
+    NopagefoundComponent, 
     
-          
+    //IncrementadorComponent,   
+   // LoginComponent,
+   // RegisterComponent,          
   ],
   imports: [
     BrowserModule,
