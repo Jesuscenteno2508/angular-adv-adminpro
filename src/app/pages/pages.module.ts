@@ -9,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 //import { NgChartsModule } from 'ng2-charts';
 //import { NgChartsModule } from 'ng2-charts';
 //import { NgChartsModule } from 'C:\Users\jesus.centeno\node_modules\ng2-charts\lib\ng-charts.module.d.ts'
@@ -20,12 +21,14 @@ import { ComponentsModule } from '../components/components.module';
     Grafica1Component,  //como se van a utilizar fuera de este componente hay que Exportarlos
     ProgressComponent,
     DashboardComponent,
+    AccountSettingsComponent,
   ],
   exports:[
     PagesComponent,     //al exportar es como si estuvieran en su mismo lugar
     Grafica1Component,
     ProgressComponent,
     DashboardComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     FormsModule,
