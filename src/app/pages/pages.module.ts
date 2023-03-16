@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 //import { NgChartsModule } from 'ng2-charts';
 //import { NgChartsModule } from 'ng2-charts';
 //import { NgChartsModule } from 'C:\Users\jesus.centeno\node_modules\ng2-charts\lib\ng-charts.module.d.ts'
@@ -22,6 +24,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     ProgressComponent,
     DashboardComponent,
     AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent,
   ],
   exports:[
     PagesComponent,     //al exportar es como si estuvieran en su mismo lugar

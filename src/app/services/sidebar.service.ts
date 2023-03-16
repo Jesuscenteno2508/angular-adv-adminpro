@@ -16,6 +16,8 @@ export class SidebarService {
         { tiulo1: 'Main', url:'/'},
         { tiulo1: 'ProgressBar', url:'progress'},
         { tiulo1: 'Graficas', url:'grafica1'},
+        { tiulo1: 'Promesas', url:'promesas'},
+        { tiulo1: 'rxjs', url:'rxjs'},
       ]
     },
     {
